@@ -2,18 +2,22 @@
   "name": "pearadox",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://A1phyte.github.io/",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "eslint-import-resolver-alias": "^1.1.2",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "react-scripts": "3.1.2",
-    "eslint-import-resolver-alias": "^1.1.2"
+    "react-scripts": "3.1.2"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --hot --open --port 3000 --config webpack.config.js",
     "reactstart": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,7 +38,6 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "bootstrap-css-only": "^4.3.1",
@@ -46,6 +49,7 @@
     "eslint-plugin-react": "^7.14.3",
     "fibers": "^4.0.1",
     "file-loader": "^3.0.1",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "mdbreact": "^4.20.0",
     "node-sass": "^4.12.0",

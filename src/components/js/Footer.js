@@ -29,7 +29,7 @@ export default class Footer extends Component {
                         </MDBCol>
                         <MDBCol>
                             <a href='https://twc.texas.gov/' target='_blank' className='text-center'>
-                                <img width='300px' src='/img/TWC.png' alt='FIRST'></img>
+                                <img width='300px' src='/img/TWC.png' alt='Texas Workforce Commission'></img>
                             </a>
                         </MDBCol>
                     </MDBRow>

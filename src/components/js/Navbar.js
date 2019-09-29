@@ -34,13 +34,13 @@ export default class Navbar extends Component {
                 home = <MDBNavItem active><MDBNavLink to='/'>Home</MDBNavLink></MDBNavItem>
                 break
             case 'robots':
-                robots = <MDBNavItem active><MDBNavLink to='/robots.html'>Robots</MDBNavLink></MDBNavItem>
+                robots = <MDBNavItem active><MDBNavLink to='robots.html'>Robots</MDBNavLink></MDBNavItem>
                 break
             case 'joining':
-                joining = <MDBNavItem active><MDBNavLink to='/joining.html'>Joining</MDBNavLink></MDBNavItem>
+                joining = <MDBNavItem active><MDBNavLink to='joining.html'>Joining</MDBNavLink></MDBNavItem>
                 break
             case 'forms':
-                forms = <MDBNavItem active><MDBNavLink to='/forms.html'>Forms</MDBNavLink></MDBNavItem>
+                forms = <MDBNavItem active><MDBNavLink to='forms.html'>Forms</MDBNavLink></MDBNavItem>
                 break
 
             default:
